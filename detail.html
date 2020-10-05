@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product -- Détail</title>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Logo -->
+      <div class="logo">
+        <a href="index.html">
+          <img src="imgs/jumia_logo_black.png" alt="logo" />
+        </a>
+      </div>
+      <!-- Right Nav item -->
+      <div class="navbar">
+        <div class="icon-bar" onclick="show()">
+          <i></i>
+          <i></i>
+          <i></i>
+        </div>
+        <input type="text" class="search" placeholder="Search my shop" />
+        <p>Bonjour, bienvenu sur jumia clone</p>
+        <ul id="nav-lists">
+          <li class="close">
+            <span onclick="Hide()">×</span>
+          </li>
+          <li><a href="#">mon compte&nbsp;|</a></li>
+          <li><a href="#">mes favoris&nbsp;|</a></li>
+          <li><a href="#">mon panier&nbsp;|</a></li>
+          <li><a href="#">checkout&nbsp;|</a></li>
+          <li><a href="#">login</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="main-menu">
+      <ul class="navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Ameublement</a></li>
+        <li><a href="#">Electroniques</a></li>
+        <li><a href="#">Vêtements</a></li>
+        <li><a href="#">Musiques</a></li>
+        <li><a href="#">E-Books</a></li>
+      </ul>
+    </div>
+    <div class="body">
+      <div class="breadcrumb-container">
+        <ul class="breadcrumb">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Meubles</a></li>
+          <li><a href="#">Chaises</a></li>
+        </ul>
+      </div>
+
+      <!-- Body main content -->
+
+      <div class="main-content">
+        <div class="main-container">
+          <div class="product-container">
+            <div class="item">
+              <div class="product-image">
+                <img
+                  src="imgs/illux_hifi.jpg"
+                  class="productImage"
+                  id="productImage"
+                  alt="product image"
+                />
+              </div>
+              <div class="product-description">
+                <h1 id="productName">Illux Chaine Hifi</h1>
+                <a href="#" class="email-to-friend">Email to a friend</a>
+                <p class="stars"></p>
+                <p>Disponibilité : <span id="isDisposale">En stock</span></p>
+                <p>
+                  Prix habituel : <span id="producPrice">129 000, 99</span> FCFA
+                </p>
+                <p>
+                  Prix spécial : <span id="specialPrice">50 000,99</span>FCFA
+                </p>
+                <p>
+                  Quantité : <b id="quantity">1</b>&nbsp;<button>
+                    Ajouter à la carte</button
+                  >&nbsp;OU
+                </p>
+                <ul class="email-to-friend user-action">
+                  <li>
+                    <a href="#">Ajouter à ma liste de souhait</a>
+                  </li>
+                  <li>
+                    <a href="#">Ajouter pour comparer</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="production-information">
+              <h2>Détails du produit</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Temporibus illum quo possimus, molestias assumenda error unde
+                corrupti deserunt ratione? Nisi laborum debitis distinctio
+                laudantium impedit nulla repudiandae, asperiores dolore. Ad.
+              </p>
+            </div>
+
+            <div class="compare-poll-cart-container">
+              <div class="call-to-action-one action-left compare">
+                <a href="#">Comparer le produit (2)</a>
+                <p>Sony Digital Camera</p>
+                <p>Samsung Digital Camera</p>
+                <div class="action-left-clear">
+                  <a href="" class="clear-all-links">clear all</a>
+                  <button>Compare</button>
+                </div>
+              </div>
+              <div class="call-to-action-one action-left compare">
+                <a href="#">Votre sondage boutique</a>
+                <p>How great is magento ?</p>
+                <div class="action-left-poll">
+                  <label for="great"> <input type="checkbox" />Great </label>
+                  <label for="amazing">
+                    <input type="checkbox" />Amazing
+                  </label>
+                  <label for="succes">
+                    <input type="checkbox" />My shops 0 success
+                  </label>
+                  <label for="wow"> <input type="checkbox" />Wow </label>
+                </div>
+              </div>
+              <div class="call-to-action-one action-left compare">
+                <a href="#">Mon panier</a>
+                <p>there is 1 item in your shopping cart</p>
+                <div class="action-left-clear">
+                  <a href="" class="clear-all-links">clear all</a>
+                  <button>checkout</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="additional-information">
+              <h3>Information additionnelle</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+                libero ad asperiores beatae, impedit ipsam autem velit?
+                Cupiditate accusamus, optio cumque ea ab laborum, nulla nisi, a
+                quidem dicta sint.
+              </p>
+            </div>
+          </div>
+
+          <div class="right-side">
+            <!-- Range slider -->
+            <div class="range-wrap">
+              <span><b>-</b></span
+              >&nbsp;<input
+                type="range"
+                class="range"
+                min="0"
+                max="950"
+              />&nbsp;<span><b>+</b></span>
+              <output class="bubble"></output>
+            </div>
+
+            <div class="pic-container">
+              <div
+                class="product-image left-product"
+                onclick="imageProduct('imgs/tv_led.jpg', 'Ilux TV LED 32 ', '250 000', '145 000', 'En stock', '10')"
+              >
+                <img src="imgs/tv_led.jpg" alt="product image" />
+              </div>
+              <div
+                class="product-image left-product"
+                onclick="imageProduct('imgs/montre_quarts.jpg', 'Dzh montre', '4,799', '8 880 ', 'En stock', '10')"
+              >
+                <img src="imgs/montre_quarts.jpg" alt="product image" />
+              </div>
+              <div
+                class="product-image left-product"
+                onclick="imageProduct('imgs/casque_ecouteur.jpg', 'BTH-278 Casques', '8 800', '21 900', 'En stock', '5')"
+              >
+                <img src="imgs/casque_ecouteur.jpg" alt="product image" />
+              </div>
+            </div>
+
+            <h1 class="interested-title">
+              vous pouvez également être intéressé par
+            </h1>
+
+            <div class="interested-in">
+              <div
+                class="other-product"
+                onclick="imageProduct('imgs/cuisiniere.jpg', 'Cuisinière 4 Feux', '102 600', '78 600', 'En stock', '10')"
+              >
+                <div class="other-product-img">
+                  <img src="imgs/cuisiniere.jpg" alt="interested in" />
+                </div>
+                <div class="other-product-details">
+                  <span><a href="#">Cuisinière 4 Feux</a></span>
+                  <span>Prix: 78 600 FCFA</span>
+                  <span><button>Ajouter à la carte</button></span>
+                  <a href="#">Ajouter à mes favoris</a>
+                  <a href="#">Ajouter à la comparaison</a>
+                </div>
+              </div>
+
+              <div
+                class="other-product"
+                onclick="imageProduct('imgs/tv.jpg', 'Tv Nasco 32 pouce', '145 600', '40 102', 'Stock épuisé', '0')"
+              >
+                <div class="other-product-img">
+                  <img src="imgs/tv.jpg" alt="interested in" />
+                </div>
+                <div class="other-product-details">
+                  <span><a href="#">Tv Nasco 32"</a></span>
+                  <span>Prix: 60 102 FCFA</span>
+                  <span><button>Ajouter à la carte</button></span>
+                  <a href="#">Ajouter à mes favoris</a>
+                  <a href="#">Ajouter à la comparaison</a>
+                </div>
+              </div>
+              <div
+                class="other-product"
+                onclick="imageProduct('imgs/tv.jpg', 'Tv Nasco 32 pouce', '145 600', '40 102', 'Stock épuisé', '0')"
+              >
+                <div class="other-product-img">
+                  <img src="imgs/tv.jpg" alt="interested in" />
+                </div>
+                <div class="other-product-details">
+                  <span><a href="#">Tv Nasco 32"</a></span>
+                  <span>Prix: 60 102 FCFA</span>
+                  <span><button>Ajouter à la carte</button></span>
+                  <a href="#">Ajouter à mes favoris</a>
+                  <a href="#">Ajouter à la comparaison</a>
+                </div>
+              </div>
+              <div
+                class="other-product"
+                onclick="imageProduct('imgs/tv.jpg', 'Tv Nasco 32 pouce', '145 600', '40 102', 'Stock épuisé', '0')"
+              >
+                <div class="other-product-img">
+                  <img src="imgs/tv.jpg" alt="interested in" />
+                </div>
+                <div class="other-product-details">
+                  <span><a href="#">Tv Nasco 32"</a></span>
+                  <span>Prix: 60 102 FCFA</span>
+                  <span><button>Ajouter à la carte</button></span>
+                  <a href="#">Ajouter à mes favoris</a>
+                  <a href="#">Ajouter à la comparaison</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="call-to-action-detail">
+          <img src="imgs/CI_W41_ET_SBD_CIL.jpg" alt="" />
+        </div>
+      </div>
+       <div class="footer-container">
+        <ul class="footer-menu-1" id="footer-menu-1">
+          <li><a href="">About us&nbsp;|</a></li>
+          <li><a href="">Custormer Service&nbsp;|</a></li>
+          <li><a href="">Suscribe to RSS&nbsp;|</a></li>
+        </ul>
+
+        <ul class="footer-menu-2" id="footer-menu-2">
+          <li><a href="">Site Map&nbsp;|</a></li>
+          <li><a href="">Search Terms&nbsp;|</a></li>
+          <li><a href="">Advanced Search&nbsp;|</a></li>
+          <li><a href="">Orders & Returns&nbsp;|</a></li>
+          <li><a href="">Help&nbsp;|</a></li>
+          <li><a href="">Contact Us&nbsp;|</a></li>
+        </ul>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

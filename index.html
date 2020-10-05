@@ -1,0 +1,561 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Logo -->
+      <div class="logo">
+        <a href="#">
+          <img src="imgs/jumia_logo_black.png" alt="logo" />
+        </a>
+      </div>
+      <!-- Right Nav item -->
+      <div class="navbar">
+        <div class="icon-bar" onclick="show()">
+          <i></i>
+          <i></i>
+          <i></i>
+        </div>
+        <input type="text" class="search" placeholder="Search my shop" />
+        <p>Bonjour, bienvenu sur jumia clone</p>
+        <ul id="nav-lists">
+          <li class="close">
+            <span onclick="Hide()">×</span>
+          </li>
+          <li><a href="#">mon compte&nbsp;|</a></li>
+          <li><a href="#">mes favoris&nbsp;|</a></li>
+          <li><a href="#">mon panier&nbsp;|</a></li>
+          <li><a href="#">checkout&nbsp;|</a></li>
+          <li><a href="#">login</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="main-menu">
+      <ul class="navigation">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Ameublement</a></li>
+        <li><a href="#">Electroniques</a></li>
+        <li><a href="#">Vêtements</a></li>
+        <li><a href="#">Musiques</a></li>
+        <li><a href="#">E-Books</a></li>
+      </ul>
+    </div>
+
+    <div class="body">
+      <div class="call-to-action-section">
+        <div class="call-to-action">
+          <div class="call-to-action-one">
+            <a href="">
+              <img src="imgs/1.jpg" alt="call to action 1" />
+            </a>
+          </div>
+          <div class="call-to-action-two">
+            <a href="">
+              <img
+                src="imgs/CI_W39_ET_SBD-CARREFOUR-GENERIC.jpg"
+                alt="call to action 2"
+              />
+            </a>
+          </div>
+          <h1>Les plus recherchés</h1>
+          <div class="popular-tags"></div>
+        </div>
+        <div class="call-to-action action-middle">
+          <div class="slider-container">
+            <a href="detail.html">
+              <div class="slides fade">
+                <img src="imgs/CI_W39_SX_FOOD-FEST.jpg" />
+              </div>
+            </a>
+
+            <a href="detail.html">
+              <div class="slides fade">
+                <img
+                  src="imgs/CI-week39-Festival-Jumia_Food-Live-Slider-VF-steak-house-teasing.jpg"
+                />
+              </div>
+            </a>
+
+            <a href="detail.html">
+              <div class="slides fade">
+                <img
+                  src="imgs/CI-week39-Festival-Jumia_Food-Live-Slider-deal_realkebab.jpg"
+                />
+              </div>
+            </a>
+
+            <a href="detail.html">
+              <div class="slides fade">
+                <img src="imgs/CI_W40_S_Courses_Du_Mois_Generic-min.jpg" />
+              </div>
+            </a>
+
+            <a href="detail.html">
+              <div class="slides fade">
+                <img src="imgs/CI_W40_SX_ILUX.jpg" />
+              </div>
+            </a>
+
+            <a href="detail.html">
+              <div class="slides fade">
+                <img src="imgs/CI_W40_S_ADS_Nasco2.jpg" />
+              </div>
+            </a>
+
+            <a href="detail.html">
+              <div class="slides fade">
+                <img src="imgs/CI_W39_SX_SBD_CIL-TEASIGN.jpg" />
+              </div>
+            </a>
+
+            <a href="detail.html">
+              <div class="slides fade">
+                <img src="imgs/CI_W41_MX_GANDOUR-TEASIGN.jpg" />
+              </div>
+            </a>
+
+            <a href="detail.html">
+              <div class="slides fade">
+                <img src="imgs/CI_W39_SX_DESTOCKAGE.jpg" />
+              </div>
+            </a>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- The dots/circles -->
+            <div class="dots-container">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
+              <span class="dot" onclick="currentSlide(5)"></span>
+              <span class="dot" onclick="currentSlide(6)"></span>
+              <span class="dot" onclick="currentSlide(7)"></span>
+              <span class="dot" onclick="currentSlide(8)"></span>
+              <span class="dot" onclick="currentSlide(9)"></span>
+            </div>
+          </div>
+
+          <div class="call-to-action-middle-bottom">
+            <div class="shipping-container">
+              <h1>Vos informations de livraison</h1>
+              <div class="shipping-address">
+                <div class="shipping-adress-header">
+                  <p>1. Vos coordonnées</p>
+                </div>
+                <div class="shipping-adress-content">
+                  <p class="customer-name">jean-patrick EHOUMAN</p>
+                  <p class="customer-localisation">
+                    Cocody Saint Jean face à la maison du parti PDC-RDA , Les
+                    tours Sainte Marie, Cocody Agence, Abidjan-Lagunes
+                  </p>
+                  <p class="customer-phone">+22557505214</p>
+                </div>
+              </div>
+              <div class="shipping-address">
+                <div class="shipping-delivery-header">
+                  <p>2. Mode de livraison</p>
+                </div>
+                <div class="shipping-delivery-content">
+                  <p class="delivery-content-question">
+                    Votre commande vous sera livrée par :
+                  </p>
+                  <label>
+                    <input type="radio" name="light" />
+                    <span class="design"></span>
+                    <span class="text">Point Relais</span>
+                  </label>
+                  <p>
+                    A partir du lundi<b>&nbsp;05 octobre</b> avec des frais
+                    d'expéditions moins élevés
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="best-selling-title">
+            <h3>
+              <a href="#">Produits les plus vendus</a>
+            </h3>
+          </div>
+          <div class="best-selling-row">
+            <a href="detail.html">
+              <div class="best-selling-item">
+                <div class="best-selling-image">
+                  <img src="imgs/basket_homme.jpg" alt="" />
+                </div>
+                <div class="best-selling-item-content">
+                  <span class="best-selling-item-name">
+                    <a href="detail.html">Basket Pour homme - Noir</a>
+                  </span>
+                  <p class="best-selling-item-description">
+                    Voir plus dans <a href="">categorie 1</a>
+                  </p>
+                </div>
+              </div>
+            </a>
+
+            <a href="detail.html">
+              <div class="best-selling-item">
+                <div class="best-selling-image">
+                  <img src="imgs/samsung_phone.jpg" alt="" />
+                </div>
+                <div class="best-selling-item-content">
+                  <span class="best-selling-item-name"
+                    ><a href="detail.html">Samsung galaxy A11 - </a></span
+                  >
+                  <p class="best-selling-item-description">
+                    Voir plus dans <a href="">categorie 2</a>
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="best-selling-row">
+            <a href="detail.html">
+              <div class="best-selling-item">
+                <div class="best-selling-image">
+                  <img src="imgs/matelas_medico.jpg" alt="" />
+                </div>
+                <div class="best-selling-item-content">
+                  <span class="best-selling-item-name"
+                    ><a href="detail.html">Carrefour Matelas - Medical</a></span
+                  >
+                  <p class="best-selling-item-description">
+                    Voir plus dans <a href="">categorie 3</a>
+                  </p>
+                </div>
+              </div>
+            </a>
+            <a href="detail.html">
+              <div class="best-selling-item">
+                <div class="best-selling-image">
+                  <img src="imgs/kalendji.jpg" alt="" />
+                </div>
+                <div class="best-selling-item-content">
+                  <span class="best-selling-item-name"
+                    ><a href="detail.html">KALENDJI by decathlon</a></span
+                  >
+                  <p class="best-selling-item-description">
+                    Voir plus dans <a href="">categorie 4</a>
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="best-selling-row">
+            <a href="detail.html">
+              <div class="best-selling-item">
+                <div class="best-selling-image">
+                  <img src="imgs/kdjfjepofjeo.jpg" alt="" />
+                </div>
+                <div class="best-selling-item-content">
+                  <span class="best-selling-item-name"
+                    ><a href="detail.html">Bracelet connecté - Intell</a></span
+                  >
+                  <p class="best-selling-item-description">
+                    voir plus dans <a href="">categorie 5</a>
+                  </p>
+                </div>
+              </div>
+            </a>
+            <a href="detail.html">
+              <div class="best-selling-item">
+                <div class="best-selling-image">
+                  <img src="imgs/illu_refrigerateur.jpg" alt="" />
+                </div>
+                <div class="best-selling-item-content">
+                  <span class="best-selling-item-name"
+                    ><a href="detail.html"
+                      >Illux Réfrigerateur 2 Battant</a
+                    ></span
+                  >
+                  <p class="best-selling-item-description">
+                    voir plus dans <a href="">categorie 6</a>
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="call-to-action">
+          <div class="call-to-action-one action-left">
+            <a href="#">Comparer le produit (2)</a>
+            <p>Sony Digital Camera</p>
+            <p>Samsung Digital Camera</p>
+            <div class="action-left-clear">
+              <a href="" class="clear-all-links">clear all</a>
+              <button>Comparer</button>
+            </div>
+          </div>
+          <div class="call-to-action-one action-left">
+            <a href="#">Mon Panier</a>
+            <p>there is 1 item in your shopping cart</p>
+            <div class="action-left-clear">
+              <a href="" class="clear-all-links">clear all</a>
+              <button>checkout</button>
+            </div>
+          </div>
+
+          <div class="call-to-action-two">
+            <iframe
+              width="320"
+              height="320"
+              src="https://www.youtube.com/embed/7F3smAk1NMc"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="call-to-action-one action-left">
+            <a href="#">My shop poll</a>
+            <p>How great is magento ?</p>
+            <div class="action-left-poll">
+              <label for="great"> <input type="checkbox" />Great </label>
+              <label for="amazing"> <input type="checkbox" />Amazing </label>
+              <label for="succes">
+                <input type="checkbox" />My shops 0 success
+              </label>
+              <label for="wow"> <input type="checkbox" />Wow </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="offer-of-day">
+        <div class="section-header">
+          <p>Offre du jour</p>
+          <p>
+            <a href="">voir plus</a>
+          </p>
+        </div>
+        <div class="section-content">
+          <a href="#">
+            <div class="section-item">
+              <div class="reduction">
+                <span>-36%</span>
+              </div>
+              <img src="imgs/ilux.jpg" alt="brand new" />
+              <div class="item-info">
+                <p>Illux TV LED 32 Pouces...</p>
+                <p class="price">62,900 FCFA</p>
+                <p class="promotionnal-price">99,000 FCFA</p>
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="section-item">
+              <div class="reduction">
+                <span>-43%</span>
+              </div>
+              <img src="imgs/basket.jpg" alt="brand new" />
+              <div class="item-info">
+                <p>WeTick Basket de Mod...</p>
+                <p class="price">4,499 FCFA - 5,499 FCFA</p>
+                <p class="promotionnal-price">7,939 FCFA</p>
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="section-item">
+              <div class="reduction">
+                <span>-40%</span>
+              </div>
+              <img src="imgs/cuisiniere.jpg" alt="brand new" />
+              <div class="item-info">
+                <p>Nasco Gazinière 4 Feux...</p>
+                <p class="price">59,900 FCFA</p>
+                <p class="promotionnal-price">101,050 FCFA</p>
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="section-item">
+              <div class="reduction">
+                <span>-17%</span>
+              </div>
+              <img src="imgs/tv.jpg" alt="brand new" />
+              <div class="item-info">
+                <p>TAIKY TV LED 32" - Deco...</p>
+                <p class="price">62,500 FCFA</p>
+                <p class="promotionnal-price">75,860 FCFA</p>
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="section-item">
+              <div class="reduction">
+                <span>-55%</span>
+              </div>
+              <img src="imgs/illux_hifi.jpg" alt="brand new" />
+              <div class="item-info">
+                <p>Illux Home Cinéma 5.1 - L..</p>
+                <p class="price">44,950 FCFA</p>
+                <p class="promotionnal-price">100,000 FCFA</p>
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="section-item">
+              <div class="reduction">
+                <span>-36%</span>
+              </div>
+              <img src="imgs/iphone.jpg" alt="brand new" />
+              <div class="item-info">
+                <p>Apple BOA iPhone X - 4G L...</p>
+                <p class="price">285,900 FCFA</p>
+                <p class="promotionnal-price">450,000 FCFA</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="our-collection">
+        <div class="collection-section-header">
+          <p>Nos collections</p>
+        </div>
+        <div class="collection-content">
+          <a href="#">
+            <div class="collection-item">
+              <img
+                src="imgs/CI_W38_LP_FREELINK-COL-Adieu-les-cheveux-abImEs.jpg"
+                alt="brand new"
+              />
+              <div class="item-info">
+                <p>Cheveux abimés</p>
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="collection-item">
+              <img src="imgs/blor.jpg" alt="brand new" />
+              <div class="item-info">
+                <p>Tu veux te blôr</p>
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="collection-item">
+              <img
+                src="imgs/CI_W38_LP_FREELINK-COL-Portez-le-temps.jpg"
+                alt="brand new"
+              />
+              <div class="item-info">
+                <p>Porter le temps</p>
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="collection-item">
+              <img src="imgs/lale.png" alt="brand new" />
+              <div class="item-info">
+                <p>Les vrai lalés</p>
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="collection-item">
+              <img src="imgs/Le-coin-des-Robes-chic.png" alt="brand new" />
+              <div class="item-info">
+                <p>Chic robe</p>
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="collection-item">
+              <img
+                src="imgs/CI_W38_LP_FREELINK-COL-Heros-de-cuisine.jpg"
+                alt="brand new"
+              />
+              <div class="item-info">
+                <p>Mamie cuisine</p>
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="collection-item">
+              <img
+                src="imgs/CI_W38_LP_FREELINK-COL-Le-coin-du-bricoleur.jpg"
+                alt="brand new"
+              />
+              <div class="item-info">
+                <p>Le bricoleur</p>
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="collection-item">
+              <img
+                src="imgs/CI_W38_LP_FREELINK-COL-Resplendissez.jpg"
+                alt="brand new"
+              />
+              <div class="item-info">
+                <p>Resplendissez</p>
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="collection-item">
+              <img
+                src="imgs/CI_W38_LP_FREELINK-COL-Peau-douce.jpg"
+                alt="brand new"
+              />
+              <div class="item-info">
+                <p>Peau douce</p>
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="collection-item">
+              <img src="imgs/laptop.jpg" alt="brand new" />
+              <div class="item-info">
+                <p>Le top des PC</p>
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="collection-item">
+              <img src="imgs/Bien-dormir.png" alt="brand new" />
+              <div class="item-info">
+                <p>Bien dodo</p>
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="collection-item">
+              <img src="imgs/see-more.png" alt="brand new" />
+              <div class="item-info">
+                <p>Voir plus</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-container">
+        <ul class="footer-menu-1" id="footer-menu-1">
+          <li><a href="">About us&nbsp;|</a></li>
+          <li><a href="">Custormer Service&nbsp;|</a></li>
+          <li><a href="">Suscribe to RSS&nbsp;|</a></li>
+        </ul>
+
+        <ul class="footer-menu-2" id="footer-menu-2">
+          <li><a href="">Site Map&nbsp;|</a></li>
+          <li><a href="">Search Terms&nbsp;|</a></li>
+          <li><a href="">Advanced Search&nbsp;|</a></li>
+          <li><a href="">Orders & Returns&nbsp;|</a></li>
+          <li><a href="">Help&nbsp;|</a></li>
+          <li><a href="">Contact Us&nbsp;|</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
